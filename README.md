@@ -2,25 +2,30 @@
 
 A comprehensive project on designing and simulating an autopilot system for the Boeing 747 (B747-FC3). This project features flight dynamics, control systems, numerical solutions, and performance validation using MATLAB and Simulink.
 
-## Project Structure
+## Key Features
 
-- **`src/`**: Contains all the MATLAB scripts and Simulink models.
-  - `RK4_Solver.m`: MATLAB implementation of the Runge-Kutta 4th order method for solving ODEs.
-  - `EOM_Simulator.slx`: Simulink model for the aircraft equations of motion.
-  - `Control_Design/`: Subfolder with control design scripts for longitudinal and lateral controllers.
+- **Flight Dynamics and Equations of Motion**
+  - Comprehensive analysis of rigid body dynamics in 3D space.
+  - Linearization and approximation of equations for control design.
 
-- **`docs/`**: Documentation detailing the methodology, results, and validation.
-  - `Project_Report.pdf`: Comprehensive report summarizing the project.
-  - `Control_Diagrams/`: Subfolder containing block diagrams and flowcharts.
+- **Control System Design**
+  - Longitudinal and lateral control systems for pitch, yaw, and roll stabilization.
+  - Velocity and altitude control implementations.
 
-- **`tests/`**: Benchmark data and test scripts.
-  - `Validation_Benchmark.m`: MATLAB script for comparing simulation results with benchmark data.
+- **Simulation and Validation**
+  - MATLAB and Simulink models for visualizing control systems and dynamic behavior.
+  - Step response, root locus, and Bode diagram analysis.
 
-- **`plots/`**: Generated plots and visualizations of system responses and controller performance.
-  - `Step_Response_Analysis/`: Subfolder containing step response plots.
-  - `Root_Locus_Bode/`: Subfolder with root locus and Bode plots for control systems.
+- **Realistic Flight Testing**
+  - Integration with FlightGear for real-world flight simulation scenarios.
+  - Validation of control system performance under varying flight conditions.
 
-- **`README.md`**: Overview of the project, including structure, setup, and usage.
+## Tools and Technologies
+
+This project relies heavily on:
+
+- **MATLAB and Simulink** for developing and simulating control systems.
+- **FlightGear** for realistic 3D flight simulation and validation of designs.
 
 ## Getting Started
 
@@ -34,20 +39,6 @@ A comprehensive project on designing and simulating an autopilot system for the 
    ```
 3. Open MATLAB and add the project directory to your MATLAB path.
 4. Explore the `src/` folder to run simulations or view control designs.
-
-## Key Features
-
-- Aircraft Type: Boeing 747 (B747-FC3)
-- Numerical Solutions:
-  - ODE solving using RK4 method.
-  - Linearization and model approximation.
-- Control Systems:
-  - Longitudinal and lateral control designs.
-  - Velocity, pitch, yaw, roll, and altitude controllers.
-- Validation:
-  - MATLAB and Simulink-based simulation comparisons.
-  - Benchmark testing.
-
 ---
 
-For detailed documentation and setup instructions, refer to the `docs/` folder.
+For detailed documentation and setup instructions, refer to the `docs/` Final Report.
